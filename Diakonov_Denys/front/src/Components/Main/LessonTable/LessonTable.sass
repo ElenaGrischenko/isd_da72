@@ -1,0 +1,66 @@
+.table
+    display: flex
+    flex-direction: column
+
+    &-container
+        display: flex
+        flex-direction: column
+        padding: 20px 5%
+
+        h1
+            font-size: 30px
+            margin-bottom: 20px
+
+    &-row
+        display: flex
+        justify-content: space-between
+
+        padding: 10px 0
+        border-bottom: 1px solid #8951b5
+
+        font-size: 18px
+
+        &:first-of-type
+            border-top: 1px solid #8951b5
+
+        &-controls
+            display: flex
+            button
+                color: #ffffff
+                background: none
+                padding: 3px 8px
+                border: 2px solid #ffffff
+                border-radius: 8px
+                font-size: 14px
+                transition: all 0.3s
+
+                &:hover
+                    background: #ffffff
+                    color: #492b61
+            
+            .del-btn
+                margin-right: 10px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                img
+                    cursor: pointer
+                    width: 23px 
+
+    &-organisation
+        display: flex
+        justify-content: flex-end
+        margin-bottom: 15px
+        #add-btn
+            margin-left: 15px 
+        img
+            cursor: pointer
+            width: 30px
+            height: 30px
+            transition: all 0.3s
+            &:hover
+                transform: rotate(90deg)
+
+          
+
+        

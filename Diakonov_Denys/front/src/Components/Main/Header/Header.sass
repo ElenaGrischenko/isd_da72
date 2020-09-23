@@ -1,0 +1,43 @@
+@import ../../../Style/mixins
+
+header
+    display: flex
+    padding: 20px 5%
+    justify-content: space-between
+    background-color: #c542f5
+
+    .title
+        font-size: 30px
+
+    .control
+        display: flex
+
+        p
+            margin-right: 20px
+            display: flex
+            flex-direction: column
+            justify-content: center
+
+        button
+            font-size: 16px
+            color: #ffffff
+            background: none
+            transition: all 0.3s
+
+            &:hover
+                background: #492b61
+                box-shadow: 7px 8px 7px 2px rgba(56, 34, 74, 0.8 )
+
+@include breaking-point(0,426)
+    header
+        flex-direction: column
+        .title
+            display: flex
+            justify-content: center
+        .control
+            justify-content: center
+            p
+                display: none
+            button 
+                font-size: 24px
+                margin-top: 15px

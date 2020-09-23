@@ -1,0 +1,2 @@
+release: python manage.py migrate --settings=core.settings_prod
+web: gunicorn core.wsgi --log-file -

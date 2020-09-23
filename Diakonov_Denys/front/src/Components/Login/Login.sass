@@ -1,0 +1,142 @@
+@import ../../Style/mixins
+
+.login
+    &-wrapper
+        height: 100vh
+        width: 100vw
+
+        display: flex
+        flex-direction: row
+
+    &-bg
+        width: 50%
+        background-image: url('../../Assets/street.jpg')
+        background-size: cover
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        h1
+            display: flex
+            justify-content: center
+            font-weight: bold
+            font-size: 60px
+
+
+    &-content
+        width: 50%
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        form
+            padding: 5%
+            margin: 0 15%
+            display: flex
+            flex-direction: column
+
+            border: 2px solid #fff
+            border-radius: 10px
+
+            box-shadow: 7px 8px 7px 2px rgba(56, 34, 74, 0.8 )
+
+            .error
+                color: #ff554f
+                margin-top: 5px
+                display: flex
+                justify-content: flex-end
+
+            .input-error
+                padding: 6px 15px !important
+                border: 3px solid  #ff554f !important
+
+            &:last-child
+                margin-bottom: none
+
+            h2
+                display: flex
+                justify-content: center
+                font-size: 26px
+                margin-bottom: 18px
+
+            .input-field
+                display: flex
+                flex-direction: column
+                margin-bottom: 18px
+
+                label
+                    margin-bottom: 5px
+                    font-size: 16px
+
+                input
+                    padding: 9px 18px
+                    font-size: 18px
+                    background: #fff
+                    border-radius: 8px
+                    color: #000
+
+                &:last-of-type
+                    margin-bottom: 25px 
+
+            .form-btns
+                display: flex
+                justify-content: space-around
+                margin-bottom: 15px
+
+                button 
+                    background: #f70fcd
+                    border: 2px solid #f70fcd
+                    padding: 7px 18px
+                    font-size: 18px
+                    border-radius: 18px
+                    color: #fff
+                    font-weight: bold
+                    cursor: pointer
+
+                    transition: 0.3s
+
+                    &:hover
+                        box-shadow: 7px 8px 7px 2px rgba(56, 34, 74, 0.8 )
+                        background: none
+                        color: #fff
+
+                    &:disabled
+                        background: #525252
+                        border: 2px solid #525252
+
+                a 
+                    color: #fff
+                    &:hover
+                        color: #f70fcd
+
+
+
+@include breaking-point(0,768)
+    .login
+        &-bg
+            width: 40%
+
+            h1
+                font-size: 40px
+
+        &-content
+            width: 60%
+
+@include breaking-point(0,426)
+    .login
+        &-wrapper
+            height: auto
+            flex-direction: column
+
+        &-bg
+            width: 100%
+
+            h1
+                font-size: 30px
+                padding: 15px 0
+
+        &-content
+            width: 100%
+            margin: 20px 0 
