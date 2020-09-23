@@ -1,0 +1,59 @@
+.dialog
+    &-wrapper
+        display: flex
+        flex-direction: column
+        color: #000
+
+    &-close
+        display: flex
+        justify-content: flex-end
+
+        img
+            width: 20px
+
+    &-title
+        font-size: 18px
+
+    &-content
+        margin-top: 20px
+        display: flex
+        flex-direction: column
+
+    &-input
+        background: none
+        padding: 8px 16px
+        border: 1px solid #492b61
+        border-radius: 8px
+        margin-bottom: 20px
+
+        &:first-of-type
+            margin-top: 20px
+
+        &::placeholder
+            color: #4f3c52
+    
+    &-btns
+        display: flex
+        justify-content: center
+
+        button
+            cursor: pointer
+            background: #492b61
+            color: #fff
+            padding: 8px 16px
+            border: 1px solid #492b61
+            border-radius: 8px
+            transition: all 0.3s
+
+            &:hover
+                background: none
+                color: #000
+            &:disabled
+                cursor: not-allowed
+                background: #a8a8a8
+                color: #000
+
+        a
+            display: flex
+            img
+                height: 30px

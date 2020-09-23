@@ -1,0 +1,8 @@
+django < 4.0
+djangorestframework
+markdown
+django-filter
+psycopg2
+drf-yasg
+django-cors-headers
+docxtpl
