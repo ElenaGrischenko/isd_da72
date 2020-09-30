@@ -1,1 +1,1 @@
-information system "Food basket"
+"Food basket"
