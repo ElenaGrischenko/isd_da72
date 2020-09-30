@@ -1,1 +1,1 @@
-Finance App
+Finance Application
