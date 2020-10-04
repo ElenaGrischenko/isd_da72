@@ -1,2 +1,2 @@
-# isd_da72
-Information Systems Design subject's repository
+# Educational process management
+TODO
